@@ -71,4 +71,13 @@ brews:
     skip_upload: true
 
 release:
-  disable: true
+  github:
+    owner: aharriscybr
+    name: terraform-provider-cybr-sh
+  draft: false
+  replace_existing_artifacts: true
+
+  disable: false
+
+signs:
+  - artifacts: checksum
